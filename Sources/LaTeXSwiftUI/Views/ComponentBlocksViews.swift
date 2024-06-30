@@ -75,9 +75,10 @@ internal struct ComponentBlocksViews: View {
               }
             }
             else {
-              HorizontalImageScroller(
-                image: image,
-                height: size.height)
+                image
+//              HorizontalImageScroller(
+//                image: image,
+//                height: size.height)
             }
             
             EquationNumber(blockIndex: blocks.filter({ $0.isEquationBlock }).firstIndex(of: block) ?? 0, side: .right)
